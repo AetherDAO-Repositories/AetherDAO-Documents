@@ -12,9 +12,17 @@ In addition to the mechanisms above, the AetherDAO incentivizes holding Aether b
 This is explained further below.
 
 ## Bonding
-The bonding discount will be set by the DAO via standard proposals, these bonds take 1, 3, 12, or 18 epochs in order to mature, and the discounts are set differently for each accordingly.
+The bonding discount will be set by the DAO via standard proposals, these bonds take 1, 3, 12, or 18 epochs in order to mature, and the discounts are set differently for each according to risk profiles.
 
 Bonding discounts will also vary depending on the collateral type used.
+
+By spending originAether upon bonding, a base discount of 25% is applied with an additional 2.5% applied for every percentage point above full-collateralization.
+I.E. If the treasury over-collateralizes issued Ather by 120%, the total discount applied by originAether being used is 75%.
+
+The originAether tokens will be minted a single time with a total supply of 10 Million.
+- 10% shall be allocated to the ADAOcommunity treasury.
+- 10% shall be allocated for promotional purposes.
+- 80% shall be allocated to individuals that stake their $ADAO governance tokens in a methodology to be determined.
 
 ## Staking
 Staking APR is calculated at the end of each epoch and Aether is not set aside for members until the APR is calculated for the past epoch. Members that have not harvested their rewards after 12 epochs will forfeit half of the rewards for the 13th epoch staked to a bot which redeems that epochs reward for the user.
@@ -36,4 +44,4 @@ This results in the DAO profiting from volatility in the market relative the the
 ## DAO Profit: DeFi
 At the most basic level, the DAO will profit from having it's treasury contents staked to a pool that can be decided upon by the DAO. In addition to this, the DAO will seek to maximize yield and do so in a way that maximizes security of members - DeFi will be integrated directly where possible as opposed to leveraging multi-sigs.
 
-The DAO will likely provide liquidity as well as lend through various platforms, as well as seek to leverage undercollateralized flash-loans to arbitrage trade the market.
+The DAO will likely provide liquidity as well as lend through various platforms, in addition to leveraging tools such as undercollateralized flash-loans to arbitrage trade the market.
