@@ -1,8 +1,7 @@
 # AetherDAO lite-paper (More to come)
-The AetherDAO introduces 3 new Native Assets to the Cardano Ecosystem.
+The AetherDAO introduces 2 new Native Assets to the Cardano Ecosystem.
 - originAether
 - Aether
-- governAether
 
 The AetherDAO offers individuals the ability to purchase Aether tokens via a bonding mechanism from the DAO, in addition to this, the DAO will purchase Aether tokens off of the market when the contents of the treasury sufficiently exceeds the current market cap of the token reflected in the integrated liquidity pool(s). Any Aether owned by the DAO treasury will be used to stake into the yield bearing mechanism of the DAO. When the market cap exceeds the treasury contents sufficiently the DAO will unstake and sell enough tokens to lower the market cap sufficiently OR expend all of the Aether held by the DAO. Additional liquidity in the DAOs treasury will be used to interact with defi protocols. When possible this will be done directly; where required, a native-script multi-sig will be leveraged.
 
@@ -16,13 +15,20 @@ The bonding discount will be set by the DAO via standard proposals, these bonds 
 
 Bonding discounts will also vary depending on the collateral type used.
 
-By spending originAether upon bonding, a base discount of 25% is applied with an additional 2.5% applied for every percentage point above full-collateralization.
-I.E. If the treasury over-collateralizes issued Ather by 120%, the total discount applied by originAether being used is 75%.
+By spending originAether upon bonding, a base discount of 10% is applied with up to an additional 40% in discount being applied on a sigmoid function that that reaches 39% of the additional discount being applied at the same rate of overcollateralization required for sale of DAO-owned Aether.
 
 The originAether tokens will be minted a single time with a total supply of 10 Million.
 - 10% shall be allocated to the ADAOcommunity treasury.
 - 10% shall be allocated for promotional purposes.
-- 80% shall be allocated to individuals that stake their $ADAO governance tokens in a methodology to be determined.
+- 80% shall be allocated to the ADAO staking portal for holders of ADAO lp tokens to stake and earn originAether
+
+The originAether will be distributed over the course of 142 epochs:
+- 200,000 per epoch for the first 12 epochs. - 2,400,000
+- 160,000 per epoch for the next 12 epochs. - 1,920,000
+- 120,000 per epoch for the next 12 epochs. - 1,420,000
+- 80,000 per epoch for the next 12 epochs. - 960,000
+- 40,000 per epoch for the next 12 epochs. - 480,000
+- 10,000 per epoch for 82 epochs. - 820,000
 
 ## Staking
 Staking APR is calculated at the end of each epoch and Aether is not set aside for members until the APR is calculated for the past epoch. Members that have not harvested their rewards after 12 epochs will forfeit half of the rewards for the 13th epoch staked to a bot which redeems that epochs reward for the user.
