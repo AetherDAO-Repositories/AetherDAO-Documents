@@ -1,4 +1,4 @@
-# AetherDAO lite-paper (More to come)
+# AetherDAO lite-paper
 The AetherDAO introduces 2 new Native Assets to the Cardano Ecosystem.
 - originAether
 - Aether
