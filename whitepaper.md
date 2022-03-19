@@ -22,15 +22,15 @@ By spending originAether upon bonding, a base discount of 10% is applied with up
 The originAether tokens will be minted a single time with a total supply of 10 Million.
 - 10% shall be allocated to the ADAOcommunity treasury.
 - 10% shall be allocated for promotional purposes.
-- 80% shall be allocated to the ADAO staking portal for holders of ADAO lp tokens to stake and earn originAether
+- 71.8% shall be allocated to the ADAO staking portal for holders of ADAO lp tokens to stake and earn originAether
+- 8.2% shall be allocated to the team.
 
-The originAether will be distributed over the course of 142 epochs:
+The originAether will be distributed over the course of 60 epochs:
 - 200,000 per epoch for the first 12 epochs. - 2,400,000
 - 160,000 per epoch for the next 12 epochs. - 1,920,000
 - 120,000 per epoch for the next 12 epochs. - 1,420,000
 - 80,000 per epoch for the next 12 epochs. - 960,000
 - 40,000 per epoch for the next 12 epochs. - 480,000
-- 10,000 per epoch for 82 epochs. - 820,000
 
 ## Staking
 Staking payouts occur with a maximum frequency set in the governance module, for example 24 hours.
@@ -45,7 +45,7 @@ Here the variable m is used to denote the maximum APR in terms of percentage, an
 The variable k is used to 'stretch out' the graph or increase the collateral ratio required to reach the maximum APR assigned by variable m.
 ![alt text](https://github.com/AetherDAO-Repositories/AetherDAO-Documents/blob/main/images/i2.png)
 
-## DAO Profit: Purchase / Stake / Sell
+## DAO Stability: Purchase / Stake / Sell
 A rate of collateralization will be set in the governance module for the purchasing and selling of Aether by the DAO.
 For example, 120% over-collaterlization in order to execute purchase orders and 90% under-collateralization in order to execute sell orders.
 
@@ -53,6 +53,13 @@ This part is relatively straight forward, whenever the DAOs collateral ratio is 
 
 This results in the DAO always purchasing Aether tokens off of the market at a price that is condusive to the DAO continuing its operation.
 Additionally bonding is limited to when the DAO is at a positive collateralization rate, further preventing dangerous capital expansion.
+
+## DAO Stability: Purchase of LP Tokens
+A rate of collateralization will be set in the governance module for the purchasing of Aether lp tokens by the DAO.
+For example, 130% over-collaterlization in order to execute purchase orders.
+
+This part is relatively straight forward, whenever the DAOs collateral ratio is above 130%, we will purchase Aether tokens off of the market and convert them into Aether lp tokens, this creates a sell pressure above this collateralization rate, but deepens the liquidity pool of the DAO.
+These tokens are not sold by policy and are intended to increase deep liquidity. These tokens can be sold off by the DAO using a standard proposal under the Agora architecture.
 
 ## DAO Profit: DeFi
 At the most basic level, the DAO will profit from having it's treasury contents staked to a pool that can be decided upon by the DAO. In addition to this, the DAO will seek to maximize yield and do so in a way that maximizes security of members - DeFi will be integrated directly where possible as opposed to leveraging multi-sigs.
